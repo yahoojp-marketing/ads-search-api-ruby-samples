@@ -25,7 +25,7 @@ Install the software below to organize environment.
 
 1. Ruby 2.7 or above
 2. gem 3.1.2 or above
-3. OpenAPI generator 4.2.3 or above
+3. OpenAPI generator 4.x series (4.2.3 or above)
 4. Specify each ID in conf/config.yml
   - account_id          : Account ID (required)
   - access_token        : Access token (required)

@@ -25,7 +25,7 @@ Ruby環境を構築するために、以下をインストールしてくださ�
 
 1. Ruby 2.7以上のバージョン
 2. gem 3.1.2以上
-3. OpenAPI generator 4.2.3以上
+3. OpenAPI generator 4.2.3以上の4.x系
 4. confディレクトリ配下にあるconfig.ymlに各IDを記述します。
   - account_id          : アカウントIDを記述してください(必須)。
   - access_token        : アクセストークンを記述してください(必須)。
