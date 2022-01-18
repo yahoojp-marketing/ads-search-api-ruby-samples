@@ -1,7 +1,7 @@
 --------------------------------
 【バージョン】
 --------------------------------
-v6
+v7
 
 
 --------------------------------
@@ -36,7 +36,7 @@ Ruby環境を構築するために、以下をインストールしてくださ�
 OpenAPI Generatorを実行しRuby用のclientを生成します。
 ※インストール方法によってOpenAPI Generatorの実行方法に違いがあります。以下の例はHomebrewでインストールした場合です。
 ```
-openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v6/Route.yaml -g ruby -o ./
+openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v7/Route.yaml -g ruby -o ./
 ```
 
 直下にopenapi_client.gemspecが生成されるので、ビルドします。
