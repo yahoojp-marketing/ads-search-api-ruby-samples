@@ -1,7 +1,7 @@
 --------------------------------
 [Version]
 --------------------------------
-v9
+v10
 
 
 --------------------------------
@@ -23,9 +23,9 @@ src/jp/co/yahoo/adssearchapi
 --------------------------------
 Install the software below to organize environment.
 
-1. Ruby 2.7 or above
-2. gem 3.1.2 or above
-3. OpenAPI generator 4.x series (4.2.3 or above)
+1. Ruby 3.1.2 or above
+2. gem 3.3.7 or above
+3. OpenAPI generator 6.2.0 or above
 4. Specify each ID in conf/config.yml
   - account_id          : Account ID (required)
   - access_token        : Access token (required)
@@ -36,7 +36,7 @@ Install the software below to organize environment.
 Execute OpenAPI Generator and generate client for Ruby.  
 *There is a difference in the execution method of OpenAPI Generator depending on the installation. The example below is for Homebrew installation.
 ```
-openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v9/Route.yaml -g ruby -o ./
+openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v10/Route.yaml -g ruby -o ./
 ```
 
 Build openapi_client.gemspec generated directly under.
