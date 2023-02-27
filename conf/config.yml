@@ -1,2 +1,2 @@
-access_token: xxxx
-account_id: xxxx
+access_token: <%= ENV["ACCESS_TOKEN"] %>
+account_id: <%= ENV["ACCOUNT_ID"] %>

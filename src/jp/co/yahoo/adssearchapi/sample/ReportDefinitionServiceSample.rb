@@ -3,8 +3,11 @@
 # load the gem
 require 'openapi_client'
 require 'yaml'
+require 'erb'
 # setup authorization
-conf = YAML.load_file("conf/config.yml")
+file = File.read("conf/config.yml")
+converted = ERB.new(file).result
+conf = YAML.load(converted)
 OpenapiClient.configure do |config|
   # Configure OAuth2 access token for authorization: oAuth
   config.access_token = conf["access_token"]
