@@ -1,2 +1,3 @@
 access_token: <%= ENV["ACCESS_TOKEN"] %>
 account_id: <%= ENV["ACCOUNT_ID"] %>
+base_account_id: <%= ENV["BASE_ACCOUNT_ID"] %>
