@@ -15,6 +15,8 @@ end
 
 api_instance = OpenapiClient::ReportDefinitionServiceApi.new
 
+base_account_id = conf["base_account_id"]
+
 # Add
 opts = {
     report_definition_service_operation: OpenapiClient::ReportDefinitionServiceOperation.new(
@@ -34,7 +36,7 @@ opts = {
 
 job_id = nil
 begin
-  result = api_instance.report_definition_service_add_post(opts)
+  result = api_instance.report_definition_service_add_post(base_account_id, opts)
   job_id = result.rval.values[0].report_definition.report_job_id
 rescue OpenapiClient::ApiError => e
   puts "Exception when calling ReportDefinitionServiceApi->report_definition_service_add_post: #{e}"
@@ -52,12 +54,12 @@ opts = {
 }
 
 begin
-  result = api_instance.report_definition_service_get_post(opts)
+  result = api_instance.report_definition_service_get_post(base_account_id, opts)
   job_status = result.rval.values[0].report_definition.report_job_status
   num = 0
   while job_status != OpenapiClient::ReportDefinitionServiceReportJobStatus::COMPLETED do
     sleep(1)
-    result = api_instance.report_definition_service_get_post(opts)
+    result = api_instance.report_definition_service_get_post(base_account_id, opts)
     job_status = result.rval.values[0].report_definition.report_job_status
     num += 1
     if num == 100
@@ -81,7 +83,7 @@ opts = {
 
 begin
   filename = "download/sample.csv"
-  open(api_instance.report_definition_service_download_post(opts)) do |file|
+  open(api_instance.report_definition_service_download_post(base_account_id, opts)) do |file|
     open(filename, "w+b") do |out|
       out.write(file.read)
     end
