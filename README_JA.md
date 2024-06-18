@@ -1,7 +1,9 @@
 --------------------------------
 【バージョン】
 --------------------------------
-v13
+最新バージョンについては以下を参照ください。
+- [APIリファレンス](https://ads-developers.yahoo.co.jp/reference/)
+- [リリースノート](https://ads-developers.yahoo.co.jp/ja/ads-api/developers-guide/release-note.html)
 
 
 --------------------------------
@@ -34,10 +36,10 @@ Ruby環境を構築するために、以下をインストールしてくださ�
 --------------------------------
 【実行】
 --------------------------------
-OpenAPI Generatorを実行しRuby用のclientを生成します。
+OpenAPI Generatorを実行しRuby用のclientを生成します。${VERSION}には最新バージョンを指定してください。
 ※インストール方法によってOpenAPI Generatorの実行方法に違いがあります。以下の例はHomebrewでインストールした場合です。
 ```
-openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v13/Route.yaml -g ruby -o ./
+openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/${VERSION}/Route.yaml -g ruby -o ./
 ```
 
 直下にopenapi_client.gemspecが生成されるので、ビルドします。
