@@ -1,4 +1,4 @@
-# Yahoo!広告 検索広告 API Rubyサンプルプログラム
+# LINEヤフー広告 検索広告 API Rubyサンプルプログラム
 
 Rubyサンプルプログラムです。
 
@@ -6,7 +6,7 @@ Rubyサンプルプログラムです。
 
 ### [日本語](./README_JA.md)
 
-# Yahoo! Ads Search Ads API Ruby sample code
+# LY Ads Search Ads API Ruby sample code
 
 Ruby sample code.
 
