@@ -37,6 +37,7 @@ opts = {
 job_id = nil
 begin
   result = api_instance.report_definition_service_add_post(base_account_id, opts)
+  puts result
   job_id = result.rval.values[0].report_definition.report_job_id
 rescue OpenapiClient::ApiError => e
   puts "Exception when calling ReportDefinitionServiceApi->report_definition_service_add_post: #{e}"
@@ -67,6 +68,7 @@ begin
       exit
     end
   end
+  puts result
 rescue OpenapiClient::ApiError => e
   puts "Exception when calling ReportDefinitionServiceApi->report_definition_service_get_post: #{e}"
 end
