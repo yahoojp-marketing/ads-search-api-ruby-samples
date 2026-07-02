@@ -24,9 +24,9 @@ src/jp/co/yahoo/adssearchapi
 --------------------------------
 Install the software below to organize environment.
 
-1. Ruby 3.1.2 or above
-2. gem 3.3.7 or above
-3. OpenAPI generator 6.2.0 or above
+1. Ruby 3.3.10 or above
+2. gem 3.5.22 or above
+3. OpenAPI generator 7.22.0 or above
 4. Set the following environment variables
     - ACCOUNT_ID          : Account ID (required)
     - ACCESS_TOKEN        : Access token (required)

@@ -25,9 +25,9 @@ src/jp/co/yahoo/adssearchapi
 --------------------------------
 Ruby環境を構築するために、以下をインストールしてください。
 
-1. Ruby 3.1.2以上のバージョン
-2. gem 3.3.7以上
-3. OpenAPI generator 6.2.0以上
+1. Ruby 3.3.10以上のバージョン
+2. gem 3.5.22以上
+3. OpenAPI generator 7.22.0以上
 4. 以下の環境変数を設定します。
     - ACCOUNT_ID          : アカウントIDを記述してください(必須)。
     - ACCESS_TOKEN        : アクセストークンを記述してください(必須)。
